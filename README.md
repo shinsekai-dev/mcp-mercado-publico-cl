@@ -338,5 +338,4 @@ mp-mcp/
 ```
 
 Para personalizar el branding (colores, logo, datos de empresa) en Excel y DOCX: editar `mcp-mp/infrastructure/brand.py`.
-#   m c p - m e r c a d o - p u b l i c o - c l  
- 
+#
