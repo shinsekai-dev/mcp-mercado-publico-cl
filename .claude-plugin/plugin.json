@@ -1,0 +1,32 @@
+{
+  "name": "mp-mcp",
+  "version": "0.1.0",
+  "description": "Servidor MCP para automatizar licitaciones de Mercado Público (ChileCompra). Busca licitaciones de software, descarga documentación, genera cotizaciones Excel y documentos de postulación.",
+  "author": "Shinsekai SpA",
+  "license": "MIT",
+  "mcpServers": {
+    "mercado-publico": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "${CLAUDE_PLUGIN_ROOT}/mcp-mp",
+        "run",
+        "python",
+        "run_stdio.py"
+      ],
+      "env": {
+        "MERCADO_PUBLICO_TICKET": "${MERCADO_PUBLICO_TICKET}"
+      }
+    }
+  },
+  "setup": {
+    "instructions": "Antes de usar, ejecutá: python ${CLAUDE_PLUGIN_ROOT}/install.py",
+    "requiredEnv": [
+      {
+        "name": "MERCADO_PUBLICO_TICKET",
+        "description": "API Key de Mercado Público. Obtenela en https://www.mercadopublico.cl → Perfil → API Key",
+        "required": true
+      }
+    ]
+  }
+}

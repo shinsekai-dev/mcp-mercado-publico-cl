@@ -1,0 +1,9 @@
+{
+  "name": "mp-mcp",
+  "displayName": "Mercado Público MCP",
+  "description": "Automatizá todo el flujo de licitaciones ChileCompra: búsqueda inteligente, descarga de documentos, cotizaciones Excel y documentos de postulación.",
+  "author": "Shinsekai SpA",
+  "repository": "https://github.com/shinsekai-dev/mp-mcp",
+  "tags": ["chile", "procurement", "licitaciones", "chilecompra", "mercado-publico", "automation"],
+  "category": "productivity"
+}
